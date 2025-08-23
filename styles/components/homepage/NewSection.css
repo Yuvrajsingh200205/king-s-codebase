@@ -1,0 +1,244 @@
+.news-section {
+    background: transparent;
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .news-header h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #e91e63;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .navigation-controls {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-button:hover:not(:disabled) {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .nav-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  .nav-button.next {
+    background: #D4AF37;
+  }
+  
+  .nav-button.next:hover:not(:disabled) {
+    background: #c19b26;
+  }
+  
+  .nav-button.next .arrow-icon path {
+    stroke: white;
+  }
+  
+  .arrow-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-button:hover:not(:disabled) .arrow-icon {
+    transform: scale(1.1);
+  }
+  
+  .news-carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .news-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .news-card {
+    flex: 0 0 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .news-image-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover .news-image-container {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .news-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover .news-image-container img {
+    transform: scale(1.05);
+  }
+  
+  .news-content {
+    padding: 0 5px;
+  }
+  
+  .news-date {
+    font-size: 0.9rem;
+    color: #e91e63;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+  }
+  
+  .news-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Staggered animations for news cards */
+  .news-card.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .news-card.fade-out {
+    animation: fadeOutDown 0.8s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .news-card {
+      flex: 0 0 33.333%;
+    }
+    
+    .news-track {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .news-section {
+      padding: 60px 15px;
+    }
+    
+    .news-header {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .news-header h1 {
+      font-size: 2.5rem;
+    }
+    
+    .news-card {
+      flex: 0 0 50%;
+    }
+    
+    .news-image-container {
+      height: 180px;
+    }
+    
+    .news-title {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    
+    .news-card {
+      flex: 0 0 100%;
+      padding: 0 10px;
+    }
+    
+    .news-image-container {
+      height: 200px;
+    }
+    
+    .navigation-controls {
+      gap: 10px;
+    }
+    
+    .nav-button {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  

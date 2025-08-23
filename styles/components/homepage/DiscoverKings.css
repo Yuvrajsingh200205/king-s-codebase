@@ -1,0 +1,188 @@
+.discover-kings {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .discover-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .discover-header h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #e91e63;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    align-items: start;
+  }
+  
+  .section-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .section-card:hover .image-container img {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  }
+  
+  .content {
+    padding: 30px 25px;
+    position: relative;
+  }
+  
+  .content h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #e91e63;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 20px 0;
+    font-style: italic;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e91e63;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e91e63;
+    transition: all 0.3s ease;
+  }
+  
+  .section-card:hover .arrow {
+    background: #e91e63;
+    color: white;
+    transform: rotate(45deg);
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .discover-header h1 {
+      font-size: 2.2rem;
+    }
+    
+    .sections-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .section-card {
+      margin: 0 10px;
+    }
+    
+    .image-container {
+      height: 200px;
+    }
+    
+    .content {
+      padding: 20px;
+    }
+    
+    .content h2 {
+      font-size: 1.1rem;
+    }
+    
+    .arrow {
+      width: 35px;
+      height: 35px;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .discover-kings {
+      padding: 40px 15px;
+    }
+    
+    .discover-header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    
+    .sections-grid {
+      gap: 25px;
+    }
+    
+    .section-card {
+      margin: 0 5px;
+    }
+  }
+  
+  /* Enhanced Animation Delays for Staggered Effect */
+  .section-card:nth-child(1) { animation-delay: 0.1s; }
+  .section-card:nth-child(2) { animation-delay: 0.3s; }
+  .section-card:nth-child(3) { animation-delay: 0.5s; }
+  .section-card:nth-child(4) { animation-delay: 0.7s; }
+  .section-card:nth-child(5) { animation-delay: 0.9s; }
+  .section-card:nth-child(6) { animation-delay: 1.1s; }
+  

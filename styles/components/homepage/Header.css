@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: white;
+}
+
+.header__left-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__left-icons .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header__left-icons .icon:hover {
+  opacity: 0.8;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-image {
+  height: 4rem; /* Adjust height as needed */
+  width: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header__logo-image:hover {
+  opacity: 0.9;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.header__menu .icon:hover {
+  opacity: 0.8;
+}

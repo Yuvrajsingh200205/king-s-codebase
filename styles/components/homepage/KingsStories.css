@@ -1,0 +1,223 @@
+.kings-stories {
+    background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stories-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .stories-header h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .story-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .story-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .story-image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .story-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .story-card:hover .story-image-container img {
+    transform: scale(1.1);
+  }
+  
+  .play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .story-card:hover .play-button-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .play-icon {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+  }
+  
+  .story-card:hover .play-icon {
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+  }
+  
+  .story-info {
+    text-align: center;
+  }
+  
+  .story-info h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .story-info p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Staggered animations for story cards */
+  .story-card.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .story-card.fade-out {
+    animation: fadeOutDown 0.8s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+  
+  /* Apply staggered delays */
+  .story-card:nth-child(1) { animation-delay: 0.1s; }
+  .story-card:nth-child(2) { animation-delay: 0.2s; }
+  .story-card:nth-child(3) { animation-delay: 0.3s; }
+  .story-card:nth-child(4) { animation-delay: 0.4s; }
+  .story-card:nth-child(5) { animation-delay: 0.5s; }
+  .story-card:nth-child(6) { animation-delay: 0.6s; }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .stories-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 30px;
+    }
+    
+    .story-image-container {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .kings-stories {
+      padding: 60px 20px;
+    }
+    
+    .stories-header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    
+    .stories-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+    }
+    
+    .story-image-container {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .story-info h3 {
+      font-size: 1.2rem;
+    }
+    
+    .story-info p {
+      font-size: 0.9rem;
+    }
+    
+    .play-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stories-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    .stories-header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    
+    .story-image-container {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  

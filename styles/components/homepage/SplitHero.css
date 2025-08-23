@@ -1,0 +1,108 @@
+.split-hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .split-hero__panel {
+    flex: 1;
+    position: relative;
+    transition: flex 0.6s ease, filter 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .split-hero__panel.expanded {
+    flex: 0 0 70%;
+  }
+  .split-hero__panel.collapsed {
+    flex: 0 0 30%;
+    filter: brightness(70%);
+  }
+  
+  /* Video full cover */
+  .split-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  /* Overlay Content */
+  .split-hero__overlay {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Headline always visible */
+  .split-hero__overlay h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease;
+  }
+  
+  /* Extra content hidden by default */
+  .split-hero__extra {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  /* Show when expanded */
+  .split-hero__panel.expanded .split-hero__extra {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Play Button hidden initially */
+  .video-play-btn {
+    opacity: 0;
+    pointer-events: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    transition: opacity 0.3s ease;
+    position: relative;
+  }
+  
+  .video-play-btn img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Show play button only when expanded (hover) */
+  .split-hero__panel.expanded .video-play-btn {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* Discover More */
+  .discover-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .discover-btn:hover {
+    background: #fff;
+    color: #000;
+  }
+  
