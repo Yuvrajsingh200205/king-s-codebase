@@ -91,21 +91,10 @@
         animation-duration: 12s;
       }
 
-      @media (min-width: 1024px) {
-        font-size: 8rem;
-        animation-duration: 135s;
-      }
     }
   }
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+
 
   .footer__partner-logos {
     display: flex;
@@ -267,5 +256,13 @@
         }
       }
     }
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
