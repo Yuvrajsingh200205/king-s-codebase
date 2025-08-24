@@ -80,12 +80,7 @@ export default function Footer() {
 
       {/* Bottom CTA and copyright */}
       <div className="footer__bottom">
-        {/* CTA Buttons */}
-        <div className="cta-buttons">
-          <button className="cta-button">VISIT US</button>
-          <button className="cta-button">APPLY</button>
-          <button className="cta-button">CONTACT US</button>
-        </div>
+
 
         {/* Copyright */}
         <div className="copyright">
