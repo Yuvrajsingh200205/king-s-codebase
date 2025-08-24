@@ -50,11 +50,11 @@ const NewsSection = () => {
     },
   ];
 
-  const itemsPerView = 4;
+  const itemsPerView = 4; // matches CSS flex-basis: 25%
   const totalItems = newsItems.length;
 
-  // Calculate the maximum number of steps needed to show the last item fully
-  const maxIndex = Math.max(0, totalItems - itemsPerView);
+  // Calculate how many "pages" we can scroll
+  const maxIndex = Math.ceil(totalItems / itemsPerView) - 1;
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => Math.max(0, prev - 1));
@@ -64,7 +64,7 @@ const NewsSection = () => {
     setCurrentIndex((prev) => Math.min(maxIndex, prev + 1));
   };
 
-  // Improved disabled state logic
+  // Button disable logic
   const isPrevDisabled = currentIndex <= 0;
   const isNextDisabled = currentIndex >= maxIndex;
 
@@ -133,7 +133,7 @@ const NewsSection = () => {
         <div
           className="news-track"
           style={{
-            transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
+            transform: `translateX(-${currentIndex * 100}%)`,
             width: `${(totalItems / itemsPerView) * 100}%`,
           }}
         >

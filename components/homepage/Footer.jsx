@@ -49,8 +49,6 @@ export default function Footer() {
           alt="The Good Schools Guide"
           className="logo"
         />
-        <div className="logo-text">ISC</div>
-        <div className="logo-text">WOODARD SCHOOLS</div>
       </div>
 
       {/* Footer navigation and social */}
@@ -77,16 +75,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Bottom CTA and copyright */}
       <div className="footer__bottom">
-
-
-        {/* Copyright */}
         <div className="copyright">
           <div>
-            © King's College Taunton. Privacy Policy. Terms & Conditions.
-            Registered Charity No. 1103346
+            <span style={{ color: "white" }}>©</span> King's College Taunton.
+            Privacy Policy. Terms & Conditions. Registered Charity No. 1103346
           </div>
           <div>Site by meXhim</div>
         </div>

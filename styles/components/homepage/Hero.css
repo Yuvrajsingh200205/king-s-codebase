@@ -92,7 +92,7 @@
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 312px;
+  width: 350px;
   border-radius: 1.5rem;
   z-index: 1000;
 }
@@ -101,29 +101,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  border-radius: 1.5rem;
-  padding: 0.4rem 0.6rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: #f6f1e8; /* light beige */
+  border-radius: 2rem; /* full pill shape */
+  padding: 0.8rem 1rem;
+  border: none;
+  box-shadow: none; /* remove shadow */
 }
 
 .hero__cta-button {
-  flex: 1;
-
   background: transparent;
-  color: #444;
+  color: #b38a58; /* golden brown */
   border: none;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400; /* lighter, not bold */
   cursor: pointer;
-  transition: all 0.25s ease;
   text-transform: uppercase;
   font-family: 'Utile Display', sans-serif;
+  padding: 0 0.9rem;
   position: relative;
 }
 
 .hero__cta-button:hover {
-  background: rgba(0, 0, 0, 0.05);
+  color: #8c6a3d; /* darker golden hover */
+  background: transparent; /* no background hover */
 }
 
 .hero__cta-button:not(:last-child)::after {
@@ -134,8 +134,9 @@
   transform: translateY(-50%);
   width: 1px;
   height: 18px;
-  background: rgba(0, 0, 0, 0.15);
+  background: #b38a58; /* golden divider */
 }
+
 
 .hero__description {
   max-width: 800px;
