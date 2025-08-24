@@ -57,7 +57,9 @@ export default function Hero() {
 
         {/* Scroll-triggered text */}
         <div
-          className={`hero__description ${showDescription ? "visible" : ""}`}
+          className={`hero__description ${
+            showDescription ? "visible" : ""
+          } space-y-10`}
         >
           <p>
             We are a wonderfully ambitious co-educational independent school

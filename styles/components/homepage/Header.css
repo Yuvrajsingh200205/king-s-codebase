@@ -1,9 +1,10 @@
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem;
-  color: white;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 3rem 14rem;
+      color: white;
+      background-color: rgb(210 18 69);
 }
 
 .header__left-icons {
@@ -13,8 +14,8 @@
 }
 
 .header__left-icons .icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -30,8 +31,8 @@
 }
 
 .header__logo-image {
-  height: 4rem; /* Adjust height as needed */
-  width: auto;
+  height: auto; /* Adjust height as needed */
+  width:11rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -46,8 +47,8 @@
 }
 
 .header__menu .icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }

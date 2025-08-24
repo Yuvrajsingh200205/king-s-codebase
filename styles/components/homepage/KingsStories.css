@@ -1,5 +1,5 @@
 .kings-stories {
-    background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+    background: rgb(210 18 69);
     padding: 80px 20px;
     min-height: 100vh;
     display: flex;
@@ -25,7 +25,7 @@
   .stories-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px 40px;
+    gap: 60px 65px;
     max-width: 1000px;
     width: 100%;
   }
@@ -44,15 +44,15 @@
   
   .story-image-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width:  100%;
+    height: 100%;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 25px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
   
   .story-image-container img {
+    aspect-ratio: 1 / 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -65,7 +65,7 @@
   
   .play-button-overlay {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s ease, opacity 0.3s ease;

@@ -1,20 +1,39 @@
 .fade-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #fff; /* adjust as needed */
-  }
-  
-  .fade-section.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .fade-section.fade-out {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  
+  display: flex;
+  flex-direction: column;
+  padding: 9.375rem 4.25rem;
+  justify-content: space-evenly;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  text-align: center;
+  max-width: 100%;
+  color: #fff;
+  background: rgb(187 153 106);
+  height: 90vh;
+}
+
+/* Fade animations */
+.fade-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-section.fade-out {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Typography */
+.fade-section h2 {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.fade-section p {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 1.25rem;
+}

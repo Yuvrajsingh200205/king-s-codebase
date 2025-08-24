@@ -89,18 +89,17 @@ const SectionCard = ({ section, index, inView }) => {
       </div>
 
       <div className="content">
-        <h2>{section.title}</h2>
-        <p>{section.subtitle}</p>
-        <div className="arrow">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M7 17L17 7M17 7H7M17 7V17"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+        <div className="text-with-arrow">
+          <div className="text">
+            <h2>{section.title}</h2>
+            <p>{section.subtitle}</p>
+          </div>
+          <div className="arrow">
+            <img
+              src="https://www.kings-taunton.co.uk/wp-content/themes/kings-taunton/dist/assets/img/right-arrow-gold.svg"
+              alt="Arrow"
             />
-          </svg>
+          </div>
         </div>
       </div>
     </div>

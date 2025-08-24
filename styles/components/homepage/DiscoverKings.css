@@ -1,5 +1,5 @@
 .discover-kings {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 60px 20px;
     font-family: 'Arial', sans-serif;
@@ -27,22 +27,16 @@
   
   .section-card {
     position: relative;
-    border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: #fff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
-  
-  .section-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  }
+
   
   .image-container {
     position: relative;
-    height: 250px;
+    height: 295px;
+    width: 100%;
     overflow: hidden;
   }
   
@@ -71,45 +65,51 @@
   }
   
   .content {
-    padding: 30px 25px;
-    position: relative;
+    padding: 30px 0;
   }
   
-  .content h2 {
-    font-size: 1.3rem;
+  .text-with-arrow {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px; /* spacing between text and arrow */
+  }
+  
+  .text h2 {
+    font-size: 24px;
+    line-height: 34px;
     font-weight: 600;
     color: #e91e63;
-    margin: 0 0 8px 0;
+    margin: 0 0 5px 0;
     letter-spacing: 0.5px;
   }
   
-  .content p {
-    font-size: 1rem;
+  .text p {
+    font-size: 24px;
+    line-height: 34px;
     color: #666;
-    margin: 0 0 20px 0;
+    margin: 0;
     font-style: italic;
   }
   
   .arrow {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #e91e63;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    background: #f9e4b7; /* light golden background */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #e91e63;
     transition: all 0.3s ease;
   }
   
-  .section-card:hover .arrow {
-    background: #e91e63;
-    color: white;
-    transform: rotate(45deg);
+  .arrow img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
   }
+
   
   /* Animation Classes */
   .fade-in {

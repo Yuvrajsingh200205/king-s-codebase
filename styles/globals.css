@@ -1,5 +1,15 @@
+
 @import 'tailwindcss';
 @import 'tw-animate-css';
+
+@font-face {
+  font-family: 'UtileNarrow';
+  src: url('/fonts/utileNarrow-Medium-TRIAL.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -119,5 +129,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'UtileNarrow', Arial, sans-serif;
   }
 }

@@ -9,11 +9,10 @@ export default function HeadWelcome() {
       {/* Left Content */}
       <motion.div
         className="head-welcome-left"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0, transform: "translateX(-50px)" }}
+        whileInView={{ opacity: 1, transform: "translateX(0)" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }} // fade both ways
+        viewport={{ once: true, amount: 0.3 }}
       >
         <h2>
           Our pupils achieve extraordinary success – far beyond just exam

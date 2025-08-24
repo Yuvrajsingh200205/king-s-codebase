@@ -1,23 +1,47 @@
 .head-welcome-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 6%;
-    background: #f8f3ec; /* softer cream background */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 5rem 6%;
+  background: #f8f3ec;
+}
+
+@media (min-width: 768px) {
+  .head-welcome-section {
+    flex-direction: row;
+    padding: 8rem 0 0 13rem;
+    gap: 2rem;
   }
-  
-  @media (min-width: 768px) {
-    .head-welcome-section {
-      flex-direction: row;
-      padding: 6rem 12%;
-    }
-  }
-  
-  .head-welcome-left {
-    flex: 1;
-    margin-right: 2rem;
-  }
+}
+
+.head-welcome-left,
+.head-welcome-right {
+  flex: 0 0 40%; 
+}
+
+.head-welcome-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 7rem;
+}
+
+.head-welcome-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-welcome-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* makes it fill its container */
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+
   
   .head-welcome-left h2 {
     font-size: 2.25rem; /* ~36px */
@@ -37,7 +61,7 @@
     font-size: 1.125rem; /* ~18px */
     color: #333;
     line-height: 1.75;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-weight: 300; /* lighter like in screenshot */
   }
   
@@ -58,13 +82,14 @@
   
   .welcome-btn {
     margin-top: 2rem;
-    padding: 0.9rem 2rem;
+    padding: 0.7rem 1.2rem;
     border: none;
     border-radius: 6px;
     font-size: 0.95rem;
     font-weight: 400;
     background: #fff;
-    color: #333;
+    color: rgb(187 153 106);
+    width: max-content;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -93,7 +118,7 @@
   
   .head-welcome-right img {
     width: 100%;
-    max-width: 460px;
+    max-width: 100%;
     border-radius: 6px;
     box-shadow: none; /* screenshot has no visible shadow */
   }

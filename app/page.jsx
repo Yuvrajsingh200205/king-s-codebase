@@ -13,7 +13,7 @@ import { Split } from "lucide-react"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#D85B73]">
+    <div className="min-h-screen bg-[rgb(210 18 69)]">
       <Header />
       <Hero />
       <SplitHero />
