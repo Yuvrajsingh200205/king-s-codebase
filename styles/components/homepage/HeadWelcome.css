@@ -12,7 +12,7 @@
 @media (min-width: 768px) {
   .head-welcome-section {
     flex-direction: row;
-    padding: 8rem 0 8rem 6%;
+    padding: 8rem 0 0 6%;
     gap: 2rem;
   }
 }
@@ -49,7 +49,7 @@
 .head-welcome-right img {
   width: 100%;
   max-width: 100%; /* ✅ prevent overflow */
-  height: auto;    /* ✅ keeps aspect ratio */
+  height: 100%;
   border-radius: 6px;
   box-shadow: none;
   object-fit: cover;

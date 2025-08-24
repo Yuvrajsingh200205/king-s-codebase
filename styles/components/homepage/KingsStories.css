@@ -75,14 +75,7 @@
     transform: translate(-50%, -50%) scale(1.1);
   }
   
-  .play-icon {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    transition: all 0.3s ease;
-  }
-  
-  .story-card:hover .play-icon {
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
-  }
+
   
   .story-info {
     text-align: center;
