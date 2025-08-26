@@ -1,19 +1,15 @@
 .fade-section {
-  display: flex;
-  flex-direction: column;
-  padding: 9.375rem 4.25rem;
-  justify-content: space-evenly;
+  min-height: 100vh;
+    background: rgb(210, 18, 69);
+  padding: 4rem 2rem;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  text-align: center;
-  max-width: 100%;
-  color: #fff;
-  background: rgb(187 153 106);
-  height: 90vh;
+  transition: all 0.8s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Fade animations */
 .fade-section.fade-in {
   opacity: 1;
   transform: translateY(0);
@@ -24,16 +20,169 @@
   transform: translateY(40px);
 }
 
-/* Typography */
-.fade-section h2 {
-  font-size: 42px;
-  line-height: 50px;
-  font-weight: bold;
+.content-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Content Columns */
+.content-column {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.column-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-badge {
+  display: inline-block;
+  background: rgb(210, 18, 69);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.section-badge.cultural {
+  background: rgb(187, 153, 106);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Section Body */
+.section-body {
+  color: #555;
+  flex-grow: 1;
+}
+
+.main-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.secondary-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Features and Programs */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(210, 18, 69);
+  padding: 0.5rem 0;
+}
+
+.programs-section {
+  margin-top: 2rem;
+}
+
+.programs-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
   margin-bottom: 1.5rem;
 }
 
-.fade-section p {
-  font-size: 42px;
-  line-height: 50px;
-  margin-bottom: 1.25rem;
+.programs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.program {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(187, 153, 106);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 968px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fade-section {
+    padding: 2rem 1rem;
+  }
+  
+  .content-column {
+    padding: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .main-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fade-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .content-column {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .main-text {
+    font-size: 0.95rem;
+  }
+  
+  .secondary-text {
+    font-size: 0.9rem;
+  }
 }

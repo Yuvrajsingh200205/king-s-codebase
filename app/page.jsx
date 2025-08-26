@@ -9,6 +9,7 @@ import DiscoverKings from "@/components/homepage/DiscoverKings"
 import KingsStories from "@/components/homepage/KingsStories"
 import NewsSection from "@/components/homepage/NewsSection"
 import Footer from "@/components/homepage/Footer"
+import NetworkSection from '@/components/homepage/NetworkSection';
 import { Split } from "lucide-react"
 
 export default function HomePage() {
@@ -16,9 +17,10 @@ export default function HomePage() {
     <div className="min-h-screen bg-[rgb(210 18 69)]">
       <Header />
       <Hero />
-      <SplitHero />
+      {/* <NetworkSection /> */}
       <HeadWelcome />
       <KingsHighlights />
+      <SplitHero />
       <FadeSection />
       <BannerSection />
       <DiscoverKings />

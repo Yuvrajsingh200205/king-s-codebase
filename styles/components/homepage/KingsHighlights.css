@@ -1,8 +1,7 @@
 .kings-section {
   padding: 9rem 0;
-  background: #fff;
-  margin: 0 auto;
-  max-width: 1200px;
+  background: rgb(210, 18, 69);
+  max-width: 100%;
 }
 
 .kings-container {
@@ -13,18 +12,17 @@
   font-size: 50px;
   text-transform: uppercase;
   line-height: 60px;
-  color: rgb(210 18 69);
+  color: white;
   padding-bottom: 2rem;
 }
 
 .kings-description {
   font-size: 20px;
   line-height: 28px;
-  color: #555;
+  color: white;
   margin: 0 auto;
   padding-bottom: 7rem;
   max-width: 650px;
-
 }
 
 .kings-stats {
@@ -50,7 +48,7 @@
 
   /* vertical divider between stat boxes */
   .stat-box:not(:last-child) {
-    border-right: 2px dotted rgb(187, 153, 106); /* gold dotted line */
+    border-right: 2px dotted rgba(255, 255, 255, 0.5); /* white dotted line with transparency */
   }
 }
 
@@ -66,13 +64,13 @@
   line-height: 1;
   font-weight: bold;
   padding: 0 4rem;
-  color: rgb(210 18 69);
+  color: white;
 }
 
 .stat-percent {
   font-size: 65px;
   line-height: 65px;
-  color: rgb(187, 153, 106); 
+  color: white;
   margin-left: 0.25rem;
 }
 
@@ -80,6 +78,6 @@
   margin-top: 0.75rem;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #333;
+  color: white;
   padding: 3rem 14px 1rem;
 }

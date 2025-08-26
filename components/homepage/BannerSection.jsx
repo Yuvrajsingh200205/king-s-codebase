@@ -21,9 +21,10 @@ export default function BannerSection() {
         ref={ref}
         className={`banner-content ${inView ? "fade-in" : "fade-out"}`}
       >
-        <h2>ONE SCHOOL, TWO WONDERFUL SITES</h2>
+        <h2>EXPANDING GLOBAL HORIZONS</h2>
+        <p>Join our network of excellence across continents</p>
         <button className="banner-btn">
-          FACILITIES <span>→</span>
+          EXPLORE PARTNERSHIPS <span>→</span>
         </button>
       </div>
     </section>

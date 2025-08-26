@@ -18,23 +18,15 @@ export default function HeadWelcome() {
         viewport={{ once: true, amount: 0.2 }}
       >
         <h2>
-          Our pupils achieve extraordinary success – far beyond just exam
-          results.
+          A Global Family of Schools – Learning Without Borders
         </h2>
 
         <p>
-          I am immensely proud and honoured to lead a school that promotes a
-          lifelong love of learning and offers unparalleled opportunities for
-          every pupil. King's is an outstanding school with a rich history
-          dating back to 1880. What sets us apart today is our vibrant, dynamic,
-          family community, where pupils are inspired to fulfil their potential
-          and make a real and lasting difference to the world around them.
+          From the historic foundation of King's College Taunton in the UK, our journey has expanded to vibrant communities in Doha (Qatar), Riyadh (Saudi Arabia), and Gurugram (India). Together with our strategic partner, Global Educational Venture (GEV), based in Dubai, we are building a dynamic network of schools that share knowledge, collaborate across continents, and inspire innovation in education.
         </p>
 
         <p>
-          I warmly invite you to explore this website and discover the spirit of
-          our wonderful school. But nothing compares to the experience of
-          visiting us in person – we look forward to welcoming you soon.
+          Every school in this network benefits from the values and standards of King's College UK, while contributing their own local character and cultural richness. Our future growth across India, Southeast Asia, and the Far East will further strengthen this vision of connected education.
         </p>
 
         <div className="headmaster-info">

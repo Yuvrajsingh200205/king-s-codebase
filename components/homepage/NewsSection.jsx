@@ -14,39 +14,39 @@ const NewsSection = () => {
 
   const newsItems = [
     {
-      date: "21 August 2025",
-      title: "KING'S PUPILS CELEBRATE TOP GCSE RESULTS",
+      date: "Global Expansion",
+      title: "KING'S COLLEGE INTERNATIONAL EXPANDS TO FOUR CONTINENTS",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/pelican-nursery-40-e1743675082517-660x0-c-center.jpg",
-      alt: "Students celebrating GCSE results",
+      alt: "Global expansion across continents",
     },
     {
-      date: "14 August 2025",
-      title: "PUPILS CELEBRATE OUTSTANDING 2025 A LEVEL AND BTEC RESULTS",
+      date: "Strategic Partnership",
+      title: "PARTNERSHIP WITH GEV DUBAI STRENGTHENS ASIA-PACIFIC PRESENCE",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kct-pre-prep-17-660x0-c-center.jpg",
-      alt: "Students celebrating A Level results",
+      alt: "Strategic partnership announcement",
     },
     {
-      date: "6 August 2025",
-      title: "CLASSROOM IN THE TREE TOPS COMING SOON TO PELICAN NURSERY",
+      date: "New Campus",
+      title: "KING'S COLLEGE GURUGRAM OPENS WITH STATE-OF-THE-ART FACILITIES",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kct-prep-18-660x0-c-center.jpg",
-      alt: "Tree house classroom design",
+      alt: "New Gurugram campus opening",
     },
     {
-      date: "4 August 2025",
-      title: "AN UNFORGETTABLE TRIP TO OKEHAMPTON",
+      date: "Future Projects",
+      title: "UPCOMING CAMPUSES PLANNED FOR SOUTHEAST ASIA AND FAR EAST",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/Kings-Taunton-2024-09-13-3237_websize-1-660x0-c-center.jpg",
-      alt: "Students on trip to Okehampton",
+      alt: "Future campus development plans",
     },
     {
-      date: "1 August 2025",
-      title: "BRODIE SELECTED FOR HOCKEY ENGLAND",
+      date: "Career Opportunities",
+      title: "JOIN OUR GLOBAL TEAM - EXCITING POSITIONS ACROSS ALL CAMPUSES",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kings-college-taunton-sixth-form-5-660x0-c-center.jpg",
-      alt: "Student selected for hockey team",
+      alt: "Career opportunities globally",
     },
   ];
 
@@ -110,7 +110,7 @@ const NewsSection = () => {
         ref={ref}
         className={`news-header ${inView ? "fade-in" : "fade-out"}`}
       >
-        <h1>NEWS</h1>
+        <h1>LATEST UPDATES</h1>
         <div className="navigation-controls">
           <button
             className="nav-button prev"

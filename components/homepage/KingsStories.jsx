@@ -9,48 +9,48 @@ const KingsStories = () => {
     triggerOnce: true,
   });
 
-  const stories = [
+  const leaders = [
     {
-      name: "CHANNAH",
-      role: "Prep Boarder",
+      name: "JUSTIN CHIPPENDALE",
+      role: "International Director",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/pelican-nursery-40-e1743675082517-660x0-c-center.jpg",
-      alt: "Channah - Prep Boarder",
+      alt: "Justin Chippendale - International Director",
     },
     {
-      name: "HUMPHREY",
-      role: "Prep Pupil",
+      name: "MICHAEL SLOAN",
+      role: "Executive Head",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kct-pre-prep-17-660x0-c-center.jpg",
-      alt: "Humphrey - Prep Pupil",
+      alt: "Michael Sloan - Executive Head",
     },
     {
-      name: "JASMINE",
-      role: "Year 9 Day Pupil",
+      name: "GLOBAL EDUCATIONAL VENTURE",
+      role: "Strategic Partner - Dubai",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kct-prep-18-660x0-c-center.jpg",
-      alt: "Jasmine - Year 9 Day Pupil",
+      alt: "GEV Dubai Partnership",
     },
     {
-      name: "HERBERT",
-      role: "International Boarder",
+      name: "ACADEMIC EXCELLENCE",
+      role: "140+ Years Heritage",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/Kings-Taunton-2024-09-13-3237_websize-1-660x0-c-center.jpg",
-      alt: "Herbert - International Boarder",
+      alt: "Academic Excellence",
     },
     {
-      name: "RÓISÍN",
-      role: "Sixth Form Boarder",
+      name: "GLOBAL NETWORK",
+      role: "Four Continents",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kings-college-taunton-sixth-form-5-660x0-c-center.jpg",
-      alt: "Róisín - Sixth Form Boarder",
+      alt: "Global Network",
     },
     {
-      name: "THOMAS",
-      role: "Sixth Form Day Pupil",
+      name: "FUTURE VISION",
+      role: "Expanding Horizons",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/pelican-nursery-10-660x0-c-center.jpg",
-      alt: "Thomas - Sixth Form Day Pupil",
+      alt: "Future Vision",
     },
   ];
 
@@ -73,14 +73,14 @@ const KingsStories = () => {
         ref={ref}
         className={`stories-header ${inView ? "fade-in" : "fade-out"}`}
       >
-        <h1>KING'S STORIES</h1>
+        <h1>LEADERSHIP & VISION</h1>
       </div>
 
       <div className={`stories-grid ${inView ? "fade-in" : "fade-out"}`}>
-        {stories.map((story, index) => (
+        {leaders.map((leader, index) => (
           <StoryCard
             key={index}
-            story={story}
+            story={leader}
             index={index}
             inView={inView}
             PlayIcon={PlayIcon}

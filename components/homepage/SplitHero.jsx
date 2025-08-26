@@ -23,7 +23,7 @@ export default function SplitHero() {
 
   return (
     <section className="split-hero">
-      {/* Left Section */}
+      {/* Left Section - Research & Innovation */}
       <div
         className={`split-hero__panel left ${
           hovered === "left"
@@ -55,27 +55,33 @@ export default function SplitHero() {
           />
         </video>
 
-        {/* Play button always rendered, only visible when expanded */}
         <button className="video-play-btn" onClick={() => handlePlay("left")}>
-          <img
-            src="https://www.kings-taunton.co.uk/wp-content/themes/kings-taunton/dist/assets/img/play-icon-gold.svg"
-            alt="Play"
-          />
+          <div className="play-icon">
+            <div className="play-triangle"></div>
+          </div>
         </button>
 
         <div className="split-hero__overlay">
-          <h2>ENCOURAGE</h2>
+          <h2 className="panel-title">
+            <span className="title-main">Research,</span>
+            <span className="title-accent">Innovation,</span>
+            <span className="title-main">& Professional Growth</span>
+          </h2>
           <div className="split-hero__extra">
-            <p>
-              Encouraging more curiosity, teamwork, excellence, endeavour and
-              risk-taking...
+            <p className="panel-description">
+              At the heart of our educational philosophy is <span className="highlight">The King's College International</span>, 
+              a hub for educational research, pedagogy innovations, professional learning, and best practices. All King's schools worldwide contribute to and benefit from this platform—sharing teaching practices, engaging in cross-cultural research projects, and enhancing professional development.
             </p>
-            <button className="discover-btn">DISCOVER MORE →</button>
+          
+            <button className="discover-btn">
+              <span>DISCOVER MORE</span>
+              <div className="btn-arrow">→</div>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Right Section */}
+      {/* Right Section - Global Education Festival */}
       <div
         className={`split-hero__panel right ${
           hovered === "right"
@@ -108,20 +114,27 @@ export default function SplitHero() {
         </video>
 
         <button className="video-play-btn" onClick={() => handlePlay("right")}>
-          <img
-            src="https://www.kings-taunton.co.uk/wp-content/themes/kings-taunton/dist/assets/img/play-icon-gold.svg"
-            alt="Play"
-          />
+          <div className="play-icon">
+            <div className="play-triangle"></div>
+          </div>
         </button>
 
         <div className="split-hero__overlay">
-          <h2>COURAGE</h2>
+          <h2 className="panel-title">
+            <span className="title-main">Global</span>
+            <span className="title-accent">Education</span>
+            <span className="title-main">Festival</span>
+          </h2>
           <div className="split-hero__extra">
-            <p>
-              Developing confidence, resilience, leadership and the ability to
-              stand tall...
+            <p className="panel-description">
+              We plan to celebrate education in its broadest sense. <span className="highlight">The King's Global 
+              Education Festival (KGEF)</span> will become a platform where educators, thought-leaders, and students come together to debate, inspire, and innovate. With editions planned across the UK, India, the Middle East, Southeast Asia, and the Far East.
             </p>
-            <button className="discover-btn">DISCOVER MORE →</button>
+  
+            <button className="discover-btn">
+              <span>DISCOVER MORE</span>
+              <div className="btn-arrow">→</div>
+            </button>
           </div>
         </div>
       </div>

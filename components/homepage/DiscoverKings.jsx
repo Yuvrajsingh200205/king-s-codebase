@@ -11,46 +11,46 @@ const DiscoverKings = () => {
 
   const sections = [
     {
-      title: "THE PELICAN DIFFERENCE",
-      subtitle: "2-4 Years",
+      title: "KING'S COLLEGE TAUNTON",
+      subtitle: "United Kingdom",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/pelican-nursery-40-e1743675082517-660x0-c-center.jpg",
-      alt: "Young child exploring outdoors",
+      alt: "King's College Taunton campus",
     },
     {
-      title: "THE PRE-PREP DIFFERENCE",
-      subtitle: "4-7 Years",
+      title: "KING'S COLLEGE DOHA",
+      subtitle: "Qatar",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kct-pre-prep-17-660x0-c-center.jpg",
-      alt: "Young student at wooden playground structure",
+      alt: "King's College Doha campus",
     },
     {
-      title: "THE PREP DIFFERENCE",
-      subtitle: "7-13 Years",
+      title: "KING'S COLLEGE RIYADH",
+      subtitle: "Saudi Arabia",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kct-prep-18-660x0-c-center.jpg",
-      alt: "Students reading together in classroom",
+      alt: "King's College Riyadh campus",
     },
     {
-      title: "THE SENIOR DIFFERENCE",
-      subtitle: "13-16 Years",
+      title: "KING'S COLLEGE GURUGRAM",
+      subtitle: "India",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/Kings-Taunton-2024-09-13-3237_websize-1-660x0-c-center.jpg",
-      alt: "Senior students in school corridor",
+      alt: "King's College Gurugram campus",
     },
     {
-      title: "THE SIXTH FORM DIFFERENCE",
-      subtitle: "16-18 Years",
+      title: "FUTURE PROJECTS",
+      subtitle: "Asia & Far East",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/kings-college-taunton-sixth-form-5-660x0-c-center.jpg",
-      alt: "Sixth form students outside modern building",
+      alt: "Future expansion projects",
     },
     {
-      title: "ADMISSIONS",
-      subtitle: "Welcome",
+      title: "GLOBAL PARTNERSHIPS",
+      subtitle: "Join Our Network",
       image:
         "https://www.kings-taunton.co.uk/wp-content/uploads/2025/03/pelican-nursery-10-660x0-c-center.jpg",
-      alt: "Students interacting outdoors",
+      alt: "Partnership opportunities",
     },
   ];
 
@@ -60,7 +60,7 @@ const DiscoverKings = () => {
         ref={ref}
         className={`discover-header ${inView ? "fade-in" : "fade-out"}`}
       >
-        <h1>DISCOVER KING'S</h1>
+        <h1>DISCOVER OUR GLOBAL NETWORK</h1>
       </div>
 
       <div className={`sections-grid ${inView ? "fade-in" : "fade-out"}`}>

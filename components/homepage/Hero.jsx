@@ -55,19 +55,24 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Scroll-triggered text */}
+        {/* Scroll-triggered text - matches your design */}
         <div
           className={`hero__description ${
             showDescription ? "visible" : ""
-          } space-y-10`}
+          }`}
         >
-          <p>
-            We are a wonderfully ambitious co-educational independent school
-            offering both day and boarding school places for pupils aged 2–18,
-            in the heart of Somerset.
-          </p>
-          <p>We encourage. We are courageous.</p>
-          <p>We are King’s.</p>
+          <div className="hero__mission">
+            <h2 className="hero__mission-title">Our Mission</h2>
+            <p>
+              King's College International shares the founding spirit of King's College UK 
+              with its first campus set in 1880 in Taunton, UK: to inspire excellence in 
+              education and to prepare young people to lead meaningful lives in a global society.
+            </p>
+            <p>
+              Our mission is to extend this heritage of outstanding learning across the world—broadening 
+              opportunities for students, fostering respect among cultures, and shaping leaders for tomorrow.
+            </p>
+          </div>
         </div>
 
         <div className="hero__cta">

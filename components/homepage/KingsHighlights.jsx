@@ -29,7 +29,7 @@ export default function KingsHighlights() {
           animate={inView ? "visible" : "hidden"}
           variants={fadeUp}
         >
-          KING’S HIGHLIGHTS
+          King's Education Network
         </motion.h2>
 
         <motion.p
@@ -38,32 +38,30 @@ export default function KingsHighlights() {
           animate={inView ? "visible" : "hidden"}
           variants={fadeUp}
         >
-          At King’s, we’re incredibly proud of the academic achievements of our
-          pupils. Achieving outstanding exam results in Somerset.
+          King's College International represents the collective strength of our schools and partnerships worldwide. By aligning our efforts across continents, we ensure that the impact of the King's education is greater than any single school could achieve alone.
+          <br /><br />
+          Our global network is united by:
         </motion.p>
 
         {/* Stats */}
         <div className="kings-stats">
           <div className="stat-box">
             <p className="stat-number">
-              96.4<span className="stat-percent">%</span>
+              <span className="stat-icon">🎓</span>
             </p>
-            <p className="stat-text">GCSE pupils achieved grades at 9-4</p>
+            <p className="stat-text">A commitment to academic excellence and holistic development.</p>
           </div>
           <div className="stat-box">
             <p className="stat-number">
-              99.2<span className="stat-percent">%</span>
+              <span className="stat-icon">🌍</span>
             </p>
-            <p className="stat-text">A-Level overall pass rate</p>
+            <p className="stat-text">Opportunities for student and teacher collaboration worldwide.</p>
           </div>
           <div className="stat-box">
             <p className="stat-number">
-              98<span className="stat-percent">%</span>
+              <span className="stat-icon">🚀</span>
             </p>
-            <p className="stat-text">
-              Parents believe our teaching allows their child to make good
-              academic progress
-            </p>
+            <p className="stat-text">A shared vision of educational innovation and leadership.</p>
           </div>
         </div>
       </div>
