@@ -32,7 +32,7 @@
 
 .header__logo-image {
   height: auto; /* Adjust height as needed */
-  width:11rem;
+  width:14rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }

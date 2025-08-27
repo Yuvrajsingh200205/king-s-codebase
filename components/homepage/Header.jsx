@@ -19,12 +19,12 @@ export default function Header() {
 
       {/* Center logo */}
       <div className="header__logo">
-        <img
-          src="https://www.kings-taunton.co.uk/wp-content/uploads/2025/01/kings-logo-white.svg"
-          alt="King's College Taunton"
-          className="header__logo-image"
-        />
-      </div>
+  <img
+    src="/logo4.png"   // ✅ Correct way to reference from public/
+    alt="King's College International"
+    className="header__logo-image"
+  />
+</div>
 
       {/* Right side menu */}
       <div className="header__menu">
